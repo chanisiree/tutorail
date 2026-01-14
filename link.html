@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Workshop</title>
+</head>
+
+<style>
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(43, 119, 185);
+    line-height: 1.7;
+    color: #333;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.container > h1,
+.container > .subtitle {
+    grid-column: 1 / -1;
+}
+.card1.borderclor-5,
+.card1.borderclor-6 {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+.card1 img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.card1 img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+h1 {
+    text-align: center;
+    color: #e5e08f;
+}
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2b2b2b;
+}
+.card1,
+.card2{
+    background-color: #ffffff;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.card1.borderclor-1{border-top:4px solid red}
+.card1.borderclor-2{border-top:4px solid green}
+.card1.borderclor-3{border-top:4px solid palevioletred}
+.card1.borderclor-4{border-top:4px solid salmon}
+.card1.borderclor-5{border-top:4px solid aquamarine}
+.card1.borderclor-6{border-top:4px solid brown}
+
+
+
+
+.card1 h2 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+
+a {
+    color: #531eff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+pre {
+    background-color: #f4f6f8;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    overflow-x: auto;
+    font-size: 14px;
+}
+
+
+code {
+    background-color: #eee;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.95em;
+}
+
+
+button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #d862b5;
+}
+
+
+img {
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+p {
+    margin-top: 8px;
+} 
+.note::before{
+    content: "💡 ";
+}
+</style>
+<body>
+<div class="container">
+
+    <h1>Workshop: Various Links</h1>
+    <p class="subtitle">เรียนรู้ลิงค์หลายรูปเเบบ พร้อมตัวอย่างเเละเเบบฝึกหัด</p>
+
+    <!-- Card 1 -->
+    <div class="card1 borderclor-1">
+        <h2>1. External Links</h2>
+    
+
+    <div class="card2">
+        <a href="https://www.wikipedia.org/" class="link-ext" target="_blank">Visit Wikipedia</a>
+        <p><code>target="_blank"</code> เปิดลิงค์ในแท็บใหม่</p>
+    </div>
+
+    <div class="card2">
+        <a href="https://www.google.com/?hl=th" class="link-ext">Visit Google</a>
+        <p><code>target="_self"</code> เปิดลิงค์ในหน้าเดิม</p>
+    </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card1 borderclor-2">
+        <h2>2. Internal Links & Anchor Links</h2>
+        <pre>
+&lt;a href="about.html"&gt;About Us&lt;/a&gt;
+&lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+&lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
+        </pre>
+
+        <a href="#jump">Click to Jump</a>
+        <h3 id="jump">This is the jump target.</h3>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card1 borderclor-3">
+        <h2>3. Email Link</h2>
+        <pre>
+&lt;a href="mailto:student@example.com?subject=Hello"&gt;
+Send an Email
+&lt;/a&gt;
+        </pre>
+
+        <a href="mailto:674259005@wabmai.npru.ac.th?subject=Hello">Send an Email</a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card1 borderclor-4">
+        <h2>4. Download Links</h2>
+        <pre>
+&lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;
+        </pre>
+
+        <a href="index.html" download>Download Text File</a>
+        <p>ต้องมีไฟล์ในโฟลเดอร์จึงดาวน์โหลดได้จริง</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card1 borderclor-5">
+        <h2>5. Button Links</h2>
+        <div class="card2">
+        <p>ลิงก์ที่ออกแบบให้คล้ายปุ่ม เหมาะกับการสมัคร ปุ่มอานเพิ่มเติม หรือปุ่มนำทาง</p>
+        <pre>
+&lt;a href="https://www.example.com" class="btn-link"&gt;
+Visit Website
+&lt;/a&gt;
+        </pre>
+        <a href="https://www.example.com" class="btn-link">
+<button onclick="location.href='index.html'">HTML Tutorial</button>
+</a>
+        </div>
+
+       <div class="card2">
+         <p> สร้างปุ่มด้วยเเท็ก <code>button</code></p>
+         <pre>
+&lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+- มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+- ผูกกับ DOM (document) โดยตรง
+&lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website&lt;/button&gt;
+- นิยมใช้มากกว่า
+- เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+- ผูกกับ window โดยตรง</pre>
+        <button onclick="location.href='index.html'">HTML Tutorial</button>
+        <button onclick="location.href=`https://courses.npru.ac.th/course/view.php?id=572` ">Visit Website</button>
+        </div>
+        
+</div>
+    <!-- Card 6 -->
+    <div class="card1 borderclor-6">
+        <h2>6. Image Link</h2>
+        <p>คลิกที่รูปภาพเพื่อเปิดลิงก์</p>
+
+        <pre>
+&lt;a href="https://youtube.com"&gt;
+&lt;img src="images/sample.jpg" width="250"&gt;
+&lt;/a&gt;
+        </pre>
+
+        <a href="https://www.youtube.com/watch?v=Hc4OrO4LRWw&list=RDHc4OrO4LRWw&start_radio=1" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuQI-5Tc5_nfD_kpWa_rhA0AbAItm6Da8nKw&s"
+                 alt="รูปภาพ" width="250">
+        </a>
+        
+            <div class="note" style="border-left: 4px solid brown;">หากต้องการใช้รูปของตนเอง ให้เก็บไว้ในโฟลเดอร์ <code>images/photo.png</code></div>
+    </div>
+        <a href="index.html">← Back to HTML Tutorial</a>
+</div>
+</body>
+</html>

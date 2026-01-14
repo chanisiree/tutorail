@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatting Workshop</title>
+    <style>
+      body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            pardding: 0;
+            line-height: 1.6;
+            background-color: rgb(214, 41, 41);
+        }
+         .container{
+            /* background-color: brown; */
+            width: 60%;
+            margin: 0 auto;
+        }
+        .card{
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border-top: 4px solid rgb(255, 89, 130);
+        }
+        .card.module1{border-top-color: rgb(12, 210, 75) ;}
+        .card.module2{border-top-color: rgb(215, 233, 19) ;}
+        h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            background-color: rgb(3, 154, 178);
+            padding: 2px 3px;
+            border-radius: 5px;
+        }
+        a:hover{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            background-color: rgb(177, 234, 255);
+        }
+        footer {
+            margin-bottom: 20px;
+        }
+        .textcolor 
+    </style>
+</head>
+<body>
+      <div class="container">
+
+        <h1>Workshop: HTML Text Formatting</h1>
+        <p >ฝึกใช้แท็กรูปแบบข้อความ (Formatting Tags) เพื่อสร้างเนื้อหาที่อ่านง่ายและเป็นระเบียบ</p>
+
+        <!-- Card 1: Explanation -->
+        <section class="card">
+            <h2>1. สิ่งที่ต้องรู้ก่อนเริ่มทำ Workshop</h2>
+
+            <p>HTML มีแท็กสำหรับจัดรูปแบบข้อความ ทำให้เนื้อหาดูเด่น อ่านง่าย และสื่อความหมายได้ดีขึ้น</p>
+
+            <ul>
+                <li>&lt;b&gt; –<b class="text"> ตัวหนา (เน้นเฉย ๆ)</b></li>
+                <li>&lt;strong&gt; – <strong>ตัวหนาแบบ “สำคัญ” เชิงความหมาย</strong>/li>
+                <li>&lt;i&gt; – <i>ตัวเอียง (ใช้กับศัพท์เฉพาะหรือตัวเน้น)</li>/li>
+                <li>&lt;em&gt; – <em>ตัวเอียงแบบเน้นน้ำเสียง</em></li>
+                <li>&lt;u&gt; – <u>ขีดเส้นใต้</u></li>
+                <li>&lt;ins&gt; – <ins>ขีดเส้นใต้</ins></li>
+                <li>&lt;mark&gt; – <mark>ไฮไลต์ข้อความ</mark>/li>
+                <li>&lt;code&gt; – <small>แสดงข้อความเป็นรูปแบบโค้ด</small></li>
+                <li>&lt;small&gt; – <sub>ข้อความขนาดเล็ก</sub></li>
+                <li>&lt;del&gt; – <del>ข้อความขีดฆ่า</del></li>
+                <li>&lt;s&gt; – <s>ข้อความขีดฆ่า</s></li>
+                <li>&lt;sub&gt; – <sub>ตัวห้อย เช่น H2O</sub></li>
+                <li>&lt;sup&gt; – <sup>ตัวยก เช่น</sup> x2</li>                
+            </ul>
+            <div class="box">
+                <p>แท็กที่ไม่รองรับใน HTML5</p>
+                <ul>
+                    <li>&lt;strike&gt; – not support in HTML5</li>
+                    <li>&lt;big&gt; – not support in HTML5</li>
+                    <li>&lt;tt&gt; – not support in HTML5</li>
+                </ul>
+            </div>
+
+            <div class="note">
+                นักศึกษาต้องใช้แท็ก formatting อย่างน้อย 5 ชนิดในงานนี้
+            </div>
+        </section>
+       
+        <!-- Card 2: Task -->
+        <section class="card module1">
+            <h2>2. ภารกิจของสำหรับนักศึกษาต้องทำ</h2>
+            <p>ให้ค้นหาเนื้อหาเกี่ยวกับ <b>“เทคโนโลยีคอมพิวเตอร์สมัยใหม่”</b> โดยต้องมี:</p>
+
+            <ul>
+                <li>หัวข้อ &lt;h1&gt; 1 อัน</li>
+                <li>ย่อหน้า &lt;p&gt; อย่างน้อย 3 ย่อหน้า</li>
+                <li>ใช้แท็ก formatting อย่างน้อย <b>5 ประเภท</b></li>
+                <li>ข้อความไหนมีการจัด formatting ให้ <b>ใส่สีข้อความเป็นสีแดงชมพู</b></li>
+            </ul>
+        </section>
+
+        <!-- Card 3: Example from students -->
+        <section class="card module2">
+            <h2>บล็อกนี้สำหรับนักศึกษาหาเนื้อหามาใส่เอง</h2>
+            <p>เอาเนื้อหามาใส่ในนี้</p>
+
+        </section>
+
+        <a href="index.html">← Back to HTML Tutorial</a>
+
+    </div>
+
+</body>
+</html>
