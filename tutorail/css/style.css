@@ -1,0 +1,134 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 200px; /* offset for fixed header
+  scroll-behavior: smooth; /* smooth scroll*/
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Component Styles */
+.container {
+  max-width: 1200px;
+  margin: 200px auto 40px;
+  padding: 20px;
+}
+
+.badge {
+  background-color: aquamarine
+  color(srgb red green blue)
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 16px
+  font-weight::bold;
+  vertical-align:middle;
+}
+
+<pre>
+                    <code>
+                        &lt;figure&gt;
+                        &lt;img src="image.jpg" alt="คำอธิบายรูปภาพ"&gt;
+                        &lt;figcaption&gt;รูปที่ 1: คำอธิบายภาพ&lt;/figcaption&gt;
+                        &lt;/figure&gt;
+                    </code>
+                </pre>
+
+.card {
+  background-color: red;
+  margin-bottom: 25px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.card.module-1 {
+  border-top: 4px solid red;
+}
+.card.module-2 {
+  border-top: 4px solid green;
+}
+.card.module-3 {
+  border-top: 4px solid palevioletred;
+}
+.card.module-4 {
+  border-top: 4px solid salmon;
+}
+.card.module-5 {
+  border-top: 4px solid aquamarine;
+}
+.card.module-6 {
+  border-top: 4px solid brown;
+}
+
+.note::before{
+    content: "💡 ";
+}
+
+/* Group 1 Styles */
+.header {
+  background-color: rgb(152, 219, 251);
+  box-shadow: 5px 5px 15px rgba(137, 137, 137, 0.3);
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.btn-text-link {
+  list-style: none;
+  margin-top: 20px;
+
+  display: flex;
+  gap: 20px;
+}
+
+.btn-text-link li {
+  background-color: rgb(245, 48, 48);
+  padding: 13px 20px;
+  border-radius: 50%;
+}
+
+.btn-text-link li:hover {
+  background-color: rgb(241, 94, 94);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Group 2 Styles */
+.img-small{
+  width:100px;
+  height: auto;
+}
+
+.position {
+  display: flex;
+  border: 2px;
+  margin: ;
+}
+
+.position.left {justify-content: flex-start;}
+.position.center {justify-content: center;}
+.position.right {justify-content: flex-end;}
+/* Group 3 Styles */
+/* Group 4 Styles */
+/* Group 5 Styles */
+/* Group 6 Styles */
+/* Group 7 Styles */
+/* Group 8 Styles */
+/* Group 9 Styles */
+/* Group 10 Styles */
