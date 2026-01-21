@@ -75,7 +75,7 @@ body {
 
 /* Group 1 Styles */
 .header {
-  background-color: rgb(152, 219, 251);
+  background-color: rgb(167, 152, 251);
   box-shadow: 5px 5px 15px rgba(137, 137, 137, 0.3);
   padding: 20px;
 
@@ -98,15 +98,27 @@ body {
 }
 
 .btn-text-link li {
-  background-color: rgb(245, 48, 48);
-  padding: 13px 20px;
-  border-radius: 50%;
+  margin: 15px 0;
+  transition: transform 0.3s ease;
 }
 
 .btn-text-link li:hover {
-  background-color: rgb(241, 94, 94);
+  transform: translateY(-10px);
+}
+.btn-text-link a {
+  /* background-color: rgb(245, 48, 48); */
+  background: linear-gradient(135deg),rgb(142, 142, 243),rgb(43, 43, 252);
+  box-shadow: 4px 15px rgb(39, 39, 38);
+  padding: 13px 20px;
   border-radius: 50%;
-  cursor: pointer;
+
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn-text-link a:hover {
+  background: linear-gradient(135deg),rgb(243, 142, 235),rgb(233, 37, 240);
 }
 
 /* Group 2 Styles */
@@ -117,8 +129,8 @@ body {
 
 .position {
   display: flex;
-  border: 2px;
-  margin: ;
+  border: 2px rgb(58, 58, 54);
+  margin: 20px 0;
 }
 
 .position.left {justify-content: flex-start;}
