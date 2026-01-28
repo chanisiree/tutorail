@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>รายงานผลเกรด</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #0b5c74, #7d6ad1);
+            color: #333;
+        }
+
+        /* ===== Header ===== */
+        .header {
+            height: 40px;
+            background: #0b5c74;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* ===== Main Container ===== */
+        .container {
+            width: 900px;
+            margin: 30px auto;
+        }
+
+        /* ===== Menu ===== */
+        .menu {
+            background: #fff;
+            padding: 10px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 16px;
+        }
+
+        .menu button {
+            border: none;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: #cfe3ff;
+            cursor: pointer;
+        }
+
+        /* ===== Profile Card ===== */
+        .profile-card {
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .profile-info {
+            background: linear-gradient(135deg, #ff9966, #ff6f61);
+            color: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            width: 60%;
+        }
+
+        .profile-info h2 {
+            margin: 0 0 10px 0;
+            font-size: 32px;
+        }
+
+        .profile-info p {
+            margin: 6px 0;
+            font-size: 16px;
+        }
+
+        .profile-info a {
+            color: #fff;
+            font-size: 16px;
+            text-decoration: underline;
+        }
+
+        .profile-image {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 6px solid #4aa3ff;
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ===== Term Grades ===== */
+        .terms {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        .term {
+            flex: 1;
+            background: #d9ecff;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .term span {
+            color: #e53935;
+        }
+
+        /* ===== GPA ===== */
+        .gpa {
+            margin-top: 20px;
+            background: #d9534f;
+            color: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background: #0b5c74;
+            color: #fff;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        📊 รายงานผลเกรด
+    </div>
+
+    <div class="container">
+
+        <div class="menu">
+            <button>👩🏻‍🎓ข้อมูลนักศึกษา</button>
+            <button>📚ผลการเรียน</button>
+            <button>📲ติดต่อ</button>
+        </div>
+
+        <div class="profile-card">
+            <div class="profile-info">
+                <h2>👩‍🎓 Chanisiree Chaputtitanon</h2>
+                <p>📌 รหัสนักศึกษา:674259005</p>
+                <p>👤 ชื่อนักศึกษา:นางสาวชนิตสิรี ชัยพฤติตานนท์</p>
+                <p>🎓 หมู่เรียน:67/50</p>
+                <p>👩‍🏫 อาจารย์ที่ปรึกษา:ผู้ช่วยศาสตราจารย์ ดร. อุษณีย์ ภักดีตระกูลวงศ์</p>
+                <p>🔗 GitHub:
+                    <a href="https://github.com/chanisiree" target="_pleng">
+                        https://github.com/chanisiree
+                    </a>
+                </p>
+            </div>
+
+            <div class="profile-image">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocLAil4tIcjCc2DU0oEgdzP0S1dER1_EY8E1KM8ClHy8S4aKZSxT=s360-c-no" alt="profile">
+            </div>
+        </div>
+
+        <div class="terms">
+            <div class="term">📚ปี 1 เทอม 1 : <span>1.75</span></div>
+            <div class="term">📖ปี 1 เทอม 2 : <span>2.00</span></div>
+            <div class="term">📑ปี 2 เทอม 1 : <span>1.78</span></div>
+        </div>
+
+        <div class="gpa">
+            🏆 เกรดเฉลี่ยสะสม: 1.84
+        </div>
+
+    </div>
+
+    <footer>
+        ©2026 Webmaster by Chanisiree Chaputtitanon ID: 674259005 | 🏫 Nakhon Pathom Rajabhat University
+    </footer>
+
+</body>
+</html>
